@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 
-import api from "https://github.com/melau-eddy/NovaTechSolutionsAfrica/blob/main/src/api"
+import api from "https://raw.githubusercontent.com/melau-eddy/NovaTechSolutionsAfrica/refs/heads/main/src/api.js"
 
 //const api = axios.create({
  // baseURL: "https://novatech-backend-9kqw.onrender.com", // Replace with your backend URL
