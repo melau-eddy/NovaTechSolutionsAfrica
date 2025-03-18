@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import axios from "axios";
+
 import api from "https://github.com/melau-eddy/NovaTechSolutionsAfrica/blob/main/src/api"
 
 //const api = axios.create({
