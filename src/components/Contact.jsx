@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import axios from "axios";
+import api from "https://github.com/melau-eddy/NovaTechSolutionsAfrica/blob/main/src/api"
 
 //const api = axios.create({
  // baseURL: "https://novatech-backend-9kqw.onrender.com", // Replace with your backend URL
@@ -25,11 +26,11 @@ const Contact = () => {
     e.preventDefault();
 
     try {
-      await axios.post("https://novatech-backend-9kqw.onrender.com/api/contact/", formData);
-      setMessage("Message sent successfully!");
+      await api.post("/api/contact/", formData);
+      alert("Message sent successfully!");
       setFormData({ name: "", email: "", message: "" });
     } catch (error) {
-      setMessage("An error occurred. Please try again.");
+      alert("An error occurred. Please try again.");
     }
   };
 
