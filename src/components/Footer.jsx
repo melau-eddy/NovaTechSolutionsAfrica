@@ -130,15 +130,15 @@ const Footer = () => {
           </h2>
           <ul className="space-y-4">
             {[
-              { label: "Mobile", value: "+2547123456789", icon: "faPhone" },
+              { label: "Mobile", value: "+254750391304", icon: "faPhone" },
               {
                 label: "Email",
-                value: "Example@gmail.com",
+                value: "novatechsolutionafrica@gmail.com",
                 icon: "faEnvelope",
               },
               {
                 label: "Address",
-                value: "Nairobi, Kenya",
+                value: "Nyeri, Kenya",
                 icon: "faMapMarkerAlt",
               },
             ].map((contact, index) => (
@@ -186,7 +186,7 @@ const Footer = () => {
               whileHover={{ scale: 1.2 }}
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.3, delay: 0.5 }}
+              transition={{ duration: 0.3, delay: 0.5 }}np
             >
               <FontAwesomeIcon
                 icon={faInstagram}
@@ -194,7 +194,7 @@ const Footer = () => {
               />
             </motion.a>
             <motion.a
-              href="https://twitter.com/your-twitter-profile"
+              href="https://x.com/NovaTechAfrica"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.2 }}
