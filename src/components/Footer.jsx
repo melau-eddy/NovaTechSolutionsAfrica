@@ -166,7 +166,7 @@ const Footer = () => {
           {/* Social Media Icons */}
           <div className="mt-6 flex space-x-4">
             <motion.a
-              href="https://www.instagram.com/your-linkedin-profile"
+              href="https://www.linkedin.com/company/novatech-solutions-africa/"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.2 }}

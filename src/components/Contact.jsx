@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import axios from "axios";
 
-const api = axios.create({
-  baseURL: "https://github.com/melau-eddy/test2/blob/main/src/api", // Replace with your backend URL
-});
+//const api = axios.create({
+ // baseURL: "https://novatech-backend-9kqw.onrender.com", // Replace with your backend URL
+//});
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -25,7 +25,7 @@ const Contact = () => {
     e.preventDefault();
 
     try {
-      await api.post("/api/contact/", formData);
+      await axios.post("https://novatech-backend-9kqw.onrender.com/api/contact/", formData);
       setMessage("Message sent successfully!");
       setFormData({ name: "", email: "", message: "" });
     } catch (error) {
