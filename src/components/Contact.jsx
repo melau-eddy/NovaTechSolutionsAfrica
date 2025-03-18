@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 
-import api from "https://raw.githubusercontent.com/melau-eddy/NovaTechSolutionsAfrica/refs/heads/main/src/api.js"
+import axios from "axios";
 
 //const api = axios.create({
  // baseURL: "https://novatech-backend-9kqw.onrender.com", // Replace with your backend URL
@@ -26,7 +26,7 @@ const Contact = () => {
     e.preventDefault();
 
     try {
-      await api.post("/api/contact/", formData);
+      await post("https://novatech-backend-9kqw.onrender.com/api/contact/", formData);
       alert("Message sent successfully!");
       setFormData({ name: "", email: "", message: "" });
     } catch (error) {
