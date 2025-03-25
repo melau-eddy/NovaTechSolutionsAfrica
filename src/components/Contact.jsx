@@ -26,7 +26,7 @@ const Contact = () => {
     e.preventDefault();
 
     try {
-      await axis.post("https://novatech-backend-9kqw.onrender.com/api/contact/", formData);
+      await axios.post("https://novatech-backend-9kqw.onrender.com/api/contact/", formData);
       alert("Message sent successfully!");
       setFormData({ name: "", email: "", message: "" });
     } catch (error) {
